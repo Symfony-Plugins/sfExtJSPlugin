@@ -1,5 +1,5 @@
 /*
- * Ext JS Library 1.0.1
+ * Ext JS Library 1.1.1
  * Copyright(c) 2006-2007, Ext JS, LLC.
  * licensing@extjs.com
  * 
@@ -16,6 +16,8 @@
     overflow:auto;
     background:white;
     position:relative; /* for calculating scroll offsets */
+    zoom:1;
+    overflow-x:hidden;
 }
 .x-combo-list-hd {
     font:bold 11px tahoma, arial, helvetica, sans-serif;
@@ -31,7 +33,6 @@
     font:normal 12px tahoma, arial, helvetica, sans-serif;
     padding:2px;
     border:1px solid #fff;
-    zoom:1;
     white-space: nowrap;
     overflow:hidden;
     text-overflow: ellipsis;
@@ -43,4 +44,7 @@
 }
 .x-combo-noedit{
     cursor:pointer;
+}
+.x-combo-list-small .x-combo-list-item {
+    font:normal 11px tahoma, arial, helvetica, sans-serif;
 }

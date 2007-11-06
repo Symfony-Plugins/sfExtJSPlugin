@@ -1,5 +1,5 @@
 /*
- * Ext JS Library 1.0.1
+ * Ext JS Library 1.1.1
  * Copyright(c) 2006-2007, Ext JS, LLC.
  * licensing@extjs.com
  * 
@@ -57,9 +57,8 @@
 /* class for hiding elements without using display:none */
 .x-hidden {
     position:absolute;
-    left:-2000px;
-    top:-2000px;
-    visibility:hidden;
+    left:-10000px;
+    top:-10000px;
 }
 
 .x-masked {
@@ -122,6 +121,7 @@
 .x-color-palette {
     width: 150px;
     height: 92px;
+    cursor: pointer;
 }
 
 .x-color-palette a {
@@ -131,6 +131,7 @@
     text-decoration: none;
     -moz-outline: 0 none;
     outline: 0 none;
+    cursor: pointer;
 }
 
 .x-color-palette a:hover, .x-color-palette a.x-color-palette-sel {
@@ -157,7 +158,7 @@
     overflow: hidden;
     left:0;
     top:0;
-    background:#999;
+    background:#777;
     zoom:1;
 }
 

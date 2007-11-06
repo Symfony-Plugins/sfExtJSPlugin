@@ -1,5 +1,5 @@
 /*
- * Ext JS Library 1.0.1
+ * Ext JS Library 1.1.1
  * Copyright(c) 2006-2007, Ext JS, LLC.
  * licensing@extjs.com
  * 
@@ -86,28 +86,63 @@
 .ext-safari .x-form-field-wrap .x-form-trigger{
     height:19px; /* safari doesn't allow height adjustments to the fields, so adjust trigger */
 }
+
+.x-form-field-wrap .x-form-date-trigger{
+    background-image: url(../images/default/form/date-trigger.gif);
+    cursor:pointer;
+}
+.x-form-field-wrap .x-form-clear-trigger{
+    background-image: url(../images/default/form/clear-trigger.gif);
+    cursor:pointer;
+}
+.x-form-field-wrap .x-form-search-trigger{
+    background-image: url(../images/default/form/search-trigger.gif);
+    cursor:pointer;
+}
+.ext-safari .x-form-field-wrap .x-form-trigger{
+    right:0;
+}
+.x-form-field-wrap .x-form-twin-triggers{
+    
+}
+.x-form-field-wrap .x-form-twin-triggers .x-form-trigger{
+    position:static;
+    top:auto;
+    vertical-align:top;
+}
+
+
 .x-form-field-wrap .x-form-trigger-over{
     background-position:-17px 0;
 }
 .x-form-field-wrap .x-form-trigger-click{
     background-position:-34px 0;
 }
+
+.x-trigger-wrap-focus .x-form-trigger{
+    background-position:-51px 0;
+}
+.x-trigger-wrap-focus .x-form-trigger-over{
+    background-position:-68px 0;
+}
+.x-trigger-wrap-focus .x-form-trigger-click{
+    background-position:-85px 0;
+}
+.x-trigger-wrap-focus .x-form-trigger{
+    border-bottom: 1px solid #7eadd9;
+}
+
 .x-item-disabled .x-form-trigger-over{
     background-position:0 0 !important;
+    border-bottom: 1px solid #B5B8C8;
 }
 .x-item-disabled .x-form-trigger-click{
     background-position:0 0 !important;
-}
-.x-form-field-wrap .x-form-date-trigger{
-    background:transparent url(../images/default/form/date-trigger.gif) no-repeat 0 0;
-    cursor:pointer;
-}
-.ext-safari .x-form-field-wrap .x-form-date-trigger{
-    right:0;
+    border-bottom: 1px solid #B5B8C8;
 }
 
 /* field focus style */
-.x-form-focus{
+.x-form-focus, textarea.x-form-focus{
 	border: 1px solid #7eadd9;
 }
 
@@ -157,8 +192,12 @@
     word-wrap: break-word;
     zoom:1;
 }
-
-/* This CSS is not final and is subject to change - jvs 03/07/07 */
+.x-form-grow-sizer p {
+    margin:0 !important;
+    border:0 none !important;
+    padding:0 !important;
+}
+/* Form Items CSS */
 
 .x-form-item {
     font:normal 12px tahoma, arial, helvetica, sans-serif;
@@ -173,6 +212,8 @@
     padding:3px;
     padding-left:0;
     clear:left;
+    z-index:2;
+    position:relative;
 }
 
 .x-form-element {
@@ -200,6 +241,7 @@
     clear:none;
     display:inline;
     margin-bottom:4px;
+    position:static;
 }
 .x-form-label-top .x-form-element {
     padding-left:0;
@@ -356,4 +398,10 @@
     top:0;
     display:block;
     background:transparent url(../images/default/form/exclamation.gif) no-repeat 0 2px;
+}
+
+
+.ext-ie td .x-form-text {
+    position:relative;
+    top:-1px;
 }
