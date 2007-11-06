@@ -1,15 +1,24 @@
-(todo) cleanup readme file
+= sfExtJSPlugin =
 
-Install:
+== Installation ==
 
-in $SF_ROOT
+Installation is only available via SVN, due to the size of the ExtJS libraries.
 
-ln -s ../plugins/sfExtPlugin/web web/sfExtPlugin
+Move into your project directory and issue the following command:
 
+For the latest stable version: [[BR]]
+  `svn export http://svn.symfony-project.com/plugins/sfExtJSPlugin/tags/RELEASE_1_0_0/ ./plugins/sfExtJSPlugin`
 
-in app.yml define JS LIB
+For the unstable development version: [[BR]]
+  `svn checkout http://svn.symfony-project.com/plugins/sfExtJSPlugin/trunk/ ./plugins/sfExtJSPlugin`
 
-all:
-  ext_js_lib: jquery
+You will need to create a symlink to the web assets. From within your project's web directory, type: [[BR]]
+  `ln -s ../plugins/sfExtJSPlugin/web sfExtJSPlugin`
 
-(yui or prototype)
+== Notes ==
+
+This plugin is bundled with the latest stable build of ExtJS, currently 1.1.1 -- once 2.0 comes out of RC, the plugin will be updated accordingly.
+  
+== License ==
+
+See LICENSE file which can be found in the sfExtJSPlugin directory.
