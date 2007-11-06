@@ -1,0 +1,15 @@
+(todo) cleanup readme file
+
+Install:
+
+in $SF_ROOT
+
+ln -s ../plugins/sfExtPlugin/web web/sfExtPlugin
+
+
+in app.yml define JS LIB
+
+all:
+  ext_js_lib: jquery
+
+(yui or prototype)
